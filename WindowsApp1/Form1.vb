@@ -91,7 +91,7 @@ Public Class Form1
         Dim direct As String
         Dim window As String
         Dim directwindows As String
-        game = ComboBox7.SelectedItem.ToString()
+        game = ComboBox7.Text.ToString()
         address1 = TextBox15.Text
         address2 = TextBox14.Text
         address3 = TextBox13.Text
@@ -126,7 +126,7 @@ Public Class Form1
         Dim direct As String
         Dim window As String
         Dim directwindows As String
-        game = ComboBox1.SelectedItem.ToString()
+        game = ComboBox1.Text.ToString()
         address1 = TextBox15.Text
         address2 = TextBox14.Text
         address3 = TextBox13.Text
