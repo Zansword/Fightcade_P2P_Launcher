@@ -1,4 +1,4 @@
-﻿Imports System.Runtime.InteropServices
+Imports System.Runtime.InteropServices
 Imports System.IO
 Imports System.Text
 
@@ -37,6 +37,7 @@ Public Class Form1
         ComboBox6.Items.Add("Player 2")
         ComboBox1.SelectedIndex = 0
         ComboBox4.SelectedIndex = 0
+        ComboBox7.SelectedIndex = 0
         ComboBox6.SelectedIndex = 0
         ComboBox2.SelectedIndex = 0
         ComboBox3.SelectedIndex = 0
@@ -78,76 +79,76 @@ Public Class Form1
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click   '구버전 ggpofba p2p
-            Dim strCmdText As String = "/c %cd%\emulator\ggpofba\ggpofba-ng.exe quark:direct,"      '/c : 실행 후 cmd 창 제거, /k : 실행 후 cmd 창 유지
-            Dim game As String
-            Dim address1 As Int32
-            Dim address2 As Int32
-            Dim address3 As Int32
-            Dim address4 As Int32
-            Dim port1 As Int32
-            Dim port2 As Int32
-            Dim position As Int32
-            Dim direct As String
-            Dim window As String
-            Dim directwindows As String
-            game = ComboBox7.SelectedItem.ToString()
-            address1 = TextBox15.Text
-            address2 = TextBox14.Text
-            address3 = TextBox13.Text
-            address4 = TextBox12.Text
-            port1 = TextBox2.Text
-            port2 = TextBox3.Text
-            position = ComboBox2.SelectedIndex
-            window = "-w"
+        Dim strCmdText As String = "/c %cd%\emulator\ggpofba\ggpofba-ng.exe quark:direct,"      '/c : 실행 후 cmd 창 제거, /k : 실행 후 cmd 창 유지
+        Dim game As String
+        Dim address1 As Int32
+        Dim address2 As Int32
+        Dim address3 As Int32
+        Dim address4 As Int32
+        Dim port1 As Int32
+        Dim port2 As Int32
+        Dim position As Int32
+        Dim direct As String
+        Dim window As String
+        Dim directwindows As String
+        game = ComboBox7.SelectedItem.ToString()
+        address1 = TextBox15.Text
+        address2 = TextBox14.Text
+        address3 = TextBox13.Text
+        address4 = TextBox12.Text
+        port1 = TextBox2.Text
+        port2 = TextBox3.Text
+        position = ComboBox2.SelectedIndex
+        window = "-w"
 
-            direct = strCmdText & game & "," & port1 & "," & address1 & "." & address2 & "." & address3 & "." & address4 & "," & port2 & "," & position
-            directwindows = strCmdText & game & "," & port1 & "," & address1 & "." & address2 & "." & address3 & "." & address4 & "," & port2 & "," & position & " " & window
+        direct = strCmdText & game & "," & port1 & "," & address1 & "." & address2 & "." & address3 & "." & address4 & "," & port2 & "," & position
+        directwindows = strCmdText & game & "," & port1 & "," & address1 & "." & address2 & "." & address3 & "." & address4 & "," & port2 & "," & position & " " & window
 
-            If Me.CheckBox2.Checked = True Then
-                System.Diagnostics.Process.Start("CMD.exe", directwindows)
-            End If
-            If Me.CheckBox2.Checked = False Then
-                System.Diagnostics.Process.Start("CMD.exe", direct)
-            End If
-        End Sub
+        If Me.CheckBox2.Checked = True Then
+            System.Diagnostics.Process.Start("CMD.exe", directwindows)
+        End If
+        If Me.CheckBox2.Checked = False Then
+            System.Diagnostics.Process.Start("CMD.exe", direct)
+        End If
+    End Sub
 
-        Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button4.Click  '공식 파이트케이드
-            Dim strCmdText As String = "/c %cd%\emulator\fbneo\fcadefbneo.exe quark:direct,"      '/c : 실행 후 cmd 창 제거, /k : 실행 후 cmd 창 유지
-            Dim game As String
-            Dim address1 As Int32
-            Dim address2 As Int32
-            Dim address3 As Int32
-            Dim address4 As Int32
-            Dim port1 As Int32
-            Dim port2 As Int32
-            Dim position As Int32
-            Dim delay As Int32
-            Dim direct As String
-            Dim window As String
-            Dim directwindows As String
-            game = ComboBox1.SelectedItem.ToString()
-            address1 = TextBox15.Text
-            address2 = TextBox14.Text
-            address3 = TextBox13.Text
-            address4 = TextBox12.Text
-            port1 = TextBox2.Text
-            port2 = TextBox3.Text
-            position = ComboBox2.SelectedIndex
-            delay = TextBox4.Text
-            window = "-w"
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click  '공식 파이트케이드
+        Dim strCmdText As String = "/c %cd%\emulator\fbneo\fcadefbneo.exe quark:direct,"      '/c : 실행 후 cmd 창 제거, /k : 실행 후 cmd 창 유지
+        Dim game As String
+        Dim address1 As Int32
+        Dim address2 As Int32
+        Dim address3 As Int32
+        Dim address4 As Int32
+        Dim port1 As Int32
+        Dim port2 As Int32
+        Dim position As Int32
+        Dim delay As Int32
+        Dim direct As String
+        Dim window As String
+        Dim directwindows As String
+        game = ComboBox1.SelectedItem.ToString()
+        address1 = TextBox15.Text
+        address2 = TextBox14.Text
+        address3 = TextBox13.Text
+        address4 = TextBox12.Text
+        port1 = TextBox2.Text
+        port2 = TextBox3.Text
+        position = ComboBox2.SelectedIndex
+        delay = TextBox4.Text
+        window = "-w"
 
-            direct = strCmdText & game & "," & port1 & "," & address1 & "." & address2 & "." & address3 & "." & address4 & "," & port2 & "," & position & "," & delay
-            directwindows = strCmdText & game & "," & port1 & "," & address1 & "." & address2 & "." & address3 & "." & address4 & "," & port2 & "," & position & "," & delay & "," & " " & window
+        direct = strCmdText & game & "," & port1 & "," & address1 & "." & address2 & "." & address3 & "." & address4 & "," & port2 & "," & position & "," & delay
+        directwindows = strCmdText & game & "," & port1 & "," & address1 & "." & address2 & "." & address3 & "." & address4 & "," & port2 & "," & position & "," & delay & "," & " " & window
 
-            If Me.CheckBox2.Checked = True Then
-                System.Diagnostics.Process.Start("CMD.exe", directwindows)
-            End If
-            If Me.CheckBox2.Checked = False Then
-                System.Diagnostics.Process.Start("CMD.exe", direct)
-            End If
-        End Sub
+        If Me.CheckBox2.Checked = True Then
+            System.Diagnostics.Process.Start("CMD.exe", directwindows)
+        End If
+        If Me.CheckBox2.Checked = False Then
+            System.Diagnostics.Process.Start("CMD.exe", direct)
+        End If
+    End Sub
 
-        Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click  '오버클럭 p2p 런처
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click  '오버클럭 p2p 런처
             Dim strCmdText As String = "/c %cd%\emulator\fbneo\fcadeoverclock.exe quark:unity,"      '/c : 실행 후 cmd 창 제거, /k : 실행 후 cmd 창 유지
             Dim game As String
             Dim address1 As Int32
@@ -161,9 +162,10 @@ Public Class Form1
             Dim overclock As Int32
             Dim unity As String
             Dim unitywindow As String
-            Dim window As String
-            game = ComboBox4.SelectedItem.ToString()
-            address1 = TextBox8.Text
+        Dim window As String
+
+        game = ComboBox4.Text.ToString()
+        address1 = TextBox8.Text
             address2 = TextBox9.Text
             address3 = TextBox10.Text
             address4 = TextBox11.Text
@@ -172,12 +174,12 @@ Public Class Form1
             position = ComboBox3.SelectedIndex
             delay = TextBox5.Text
             overclock = ComboBox5.SelectedIndex
-            window = "-w"
+        window = "-w"
 
-            unity = strCmdText & game & "," & port1 & "," & address1 & "." & address2 & "." & address3 & "." & address4 & "," & port2 & "," & position & "," & delay & "," & overclock
-            unitywindow = strCmdText & game & "," & port1 & "," & address1 & "." & address2 & "." & address3 & "." & address4 & "," & port2 & "," & position & "," & delay & "," & overclock & " " & window
+        unity = strCmdText & game & "," & port1 & "," & address1 & "." & address2 & "." & address3 & "." & address4 & "," & port2 & "," & position & "," & overclock & "," & delay
+        unitywindow = strCmdText & game & "," & port1 & "," & address1 & "." & address2 & "." & address3 & "." & address4 & "," & port2 & "," & position & "," & overclock & "," & delay & " " & window
 
-            If Me.CheckBox2.Checked = True Then
+        If Me.CheckBox2.Checked = True Then
                 System.Diagnostics.Process.Start("CMD.exe", unitywindow)
             End If
             If Me.CheckBox2.Checked = False Then
@@ -186,7 +188,7 @@ Public Class Form1
         End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click   'fc1
-        WritePrivateProfileString("GGPOFBA", "Game", ComboBox1.Text, Application.StartupPath & "\setting.ini")
+        WritePrivateProfileString("GGPOFBA", "Game", ComboBox1.SelectedItem, Application.StartupPath & "\setting.ini")
         WritePrivateProfileString("GGPOFBA", "ip1", TextBox18.Text, Application.StartupPath & "\setting.ini")
         WritePrivateProfileString("GGPOFBA", "ip2", TextBox17.Text, Application.StartupPath & "\setting.ini")
         WritePrivateProfileString("GGPOFBA", "ip3", TextBox16.Text, Application.StartupPath & "\setting.ini")
@@ -197,7 +199,7 @@ Public Class Form1
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles setting2.Click  'fc2
-        WritePrivateProfileString("FC2", "Game", ComboBox4.Text, Application.StartupPath & "\setting.ini")
+        WritePrivateProfileString("FC2", "Game", ComboBox4.SelectedItem, Application.StartupPath & "\setting.ini")
         WritePrivateProfileString("FC2", "ip1", TextBox15.Text, Application.StartupPath & "\setting.ini")
         WritePrivateProfileString("FC2", "ip2", TextBox14.Text, Application.StartupPath & "\setting.ini")
         WritePrivateProfileString("FC2", "ip3", TextBox13.Text, Application.StartupPath & "\setting.ini")
@@ -209,7 +211,7 @@ Public Class Form1
     End Sub
 
     Private Sub setting3_Click(sender As Object, e As EventArgs) Handles setting3.Click    'overclock
-        WritePrivateProfileString("Overclock", "Game", ComboBox7.Text, Application.StartupPath & "\setting.ini")
+        WritePrivateProfileString("Overclock", "Game", ComboBox7.SelectedItem, Application.StartupPath & "\setting.ini")
         WritePrivateProfileString("Overclock", "ip1", TextBox8.Text, Application.StartupPath & "\setting.ini")
         WritePrivateProfileString("Overclock", "ip2", TextBox9.Text, Application.StartupPath & "\setting.ini")
         WritePrivateProfileString("Overclock", "ip3", TextBox10.Text, Application.StartupPath & "\setting.ini")
