@@ -92,13 +92,13 @@ Public Class Form1
         Dim window As String
         Dim directwindows As String
         game = ComboBox7.Text.ToString()
-        address1 = TextBox15.Text
-        address2 = TextBox14.Text
-        address3 = TextBox13.Text
-        address4 = TextBox12.Text
-        port1 = TextBox2.Text
-        port2 = TextBox3.Text
-        position = ComboBox2.SelectedIndex
+        address1 = TextBox18.Text
+        address2 = TextBox17.Text
+        address3 = TextBox16.Text
+        address4 = TextBox1.Text
+        port1 = TextBox21.Text
+        port2 = TextBox20.Text
+        position = ComboBox6.SelectedIndex
         window = "-w"
 
         direct = strCmdText & game & "," & port1 & "," & address1 & "." & address2 & "." & address3 & "." & address4 & "," & port2 & "," & position
