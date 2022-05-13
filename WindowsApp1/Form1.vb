@@ -35,12 +35,12 @@ Public Class Form1
         ComboBox3.Items.Add("Player 2")
         ComboBox6.Items.Add("Player 1")
         ComboBox6.Items.Add("Player 2")
-        ComboBox7.SelectedIndex = 0
-        ComboBox1.SelectedIndex = 0
-        ComboBox4.SelectedIndex = 0
-        ComboBox2.SelectedIndex = 0
-        ComboBox3.SelectedIndex = 0
-        ComboBox6.SelectedIndex = 0
+        '   ComboBox7.SelectedIndex = 0
+        '  ComboBox1.SelectedIndex = 0
+        '   ComboBox4.SelectedIndex = 0
+        '   ComboBox2.SelectedIndex = 0
+        '  ComboBox3.SelectedIndex = 0
+        '  ComboBox6.SelectedIndex = 0
         ComboBox5.Items.Add("Select Cpu values")
         ComboBox5.Items.Add("Default(100%)")
         ComboBox5.Items.Add("Overclock 150%")
@@ -86,6 +86,26 @@ Public Class Form1
         position = ComboBox6.SelectedIndex
         window = "-w"
 
+        If ComboBox7.Text = "" Then
+            MessageBox.Show("No Games Selected!", "Notification")
+            Return
+        End If
+
+        If TextBox1.Text = "" Then
+            MessageBox.Show("IP address blanked!", "Notification")
+            Return
+        End If
+
+        If TextBox21.Text = "" Then
+            MessageBox.Show("please input your port!", "Notification")
+            Return
+        End If
+
+        If TextBox20.Text = "" Then
+            MessageBox.Show("please input your partner's port!", "Notification")
+            Return
+        End If
+
         direct = strCmdText & game & "," & port1 & "," & address & "," & port2 & "," & position
         directwindows = strCmdText & game & "," & port1 & "," & address & "," & port2 & "," & position & " " & window
 
@@ -115,6 +135,30 @@ Public Class Form1
         position = ComboBox2.SelectedIndex
         delay = TextBox4.Text
         window = "-w"
+
+        If ComboBox1.Text = "" Then
+            MessageBox.Show("No Games Selected!", "Notification")
+            Return
+        End If
+
+        If TextBox8.Text = "" Then
+            MessageBox.Show("IP address blanked!", "Notification")
+            Return
+        End If
+
+        If TextBox2.Text = "" Then
+            MessageBox.Show("please input your port!", "Notification")
+            Return
+        End If
+
+        If TextBox3.Text = "" Then
+            MessageBox.Show("please input your partner's port!", "Notification")
+            Return
+        End If
+
+        If TextBox4.Text = "" Then
+            delay = 0
+        End If
 
         direct = strCmdText & game & "," & port1 & "," & address & "," & port2 & "," & position & "," & delay
         directwindows = strCmdText & game & "," & port1 & "," & address & "," & port2 & "," & position & "," & delay & " " & window
@@ -150,6 +194,30 @@ Public Class Form1
         delay = TextBox5.Text
         overclock = ComboBox5.SelectedIndex
         window = "-w"
+
+        If ComboBox4.Text = "" Then
+            MessageBox.Show("No Games Selected!", "Notification")
+            Return
+        End If
+
+        If TextBox19.Text = "" Then
+            MessageBox.Show("IP address blanked!", "Notification")
+            Return
+        End If
+
+        If TextBox7.Text = "" Then
+            MessageBox.Show("please input your port!", "Notification")
+            Return
+        End If
+
+        If TextBox6.Text = "" Then
+            MessageBox.Show("please input your partner's port!", "Notification")
+            Return
+        End If
+
+        If TextBox5.Text = "" Then
+            delay = 0
+        End If
 
         unity = strCmdText & game & "," & port1 & "," & address & "," & port2 & "," & position & "," & overclock & "," & delay
         unitywindow = strCmdText & game & "," & port1 & "," & address & "," & port2 & "," & position & "," & overclock & "," & delay & " " & window
