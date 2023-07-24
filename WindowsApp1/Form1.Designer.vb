@@ -26,13 +26,7 @@ Partial Class Form1
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.tabcontrol1 = New System.Windows.Forms.TabControl()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
-        Me.Label24 = New System.Windows.Forms.Label()
-        Me.Label25 = New System.Windows.Forms.Label()
-        Me.Label26 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox16 = New System.Windows.Forms.TextBox()
-        Me.TextBox17 = New System.Windows.Forms.TextBox()
-        Me.TextBox18 = New System.Windows.Forms.TextBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.ComboBox6 = New System.Windows.Forms.ComboBox()
@@ -46,13 +40,7 @@ Partial Class Form1
         Me.Label31 = New System.Windows.Forms.Label()
         Me.Label32 = New System.Windows.Forms.Label()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.TextBox12 = New System.Windows.Forms.TextBox()
-        Me.TextBox13 = New System.Windows.Forms.TextBox()
-        Me.TextBox14 = New System.Windows.Forms.TextBox()
-        Me.TextBox15 = New System.Windows.Forms.TextBox()
+        Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.setting2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
@@ -68,12 +56,7 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.TextBox19 = New System.Windows.Forms.TextBox()
         Me.ComboBox5 = New System.Windows.Forms.ComboBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.setting3 = New System.Windows.Forms.Button()
@@ -84,7 +67,6 @@ Partial Class Form1
         Me.Label8 = New System.Windows.Forms.Label()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.ComboBox4 = New System.Windows.Forms.ComboBox()
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -131,13 +113,7 @@ Partial Class Form1
         'TabPage4
         '
         Me.TabPage4.BackColor = System.Drawing.Color.DarkCyan
-        Me.TabPage4.Controls.Add(Me.Label24)
-        Me.TabPage4.Controls.Add(Me.Label25)
-        Me.TabPage4.Controls.Add(Me.Label26)
         Me.TabPage4.Controls.Add(Me.TextBox1)
-        Me.TabPage4.Controls.Add(Me.TextBox16)
-        Me.TabPage4.Controls.Add(Me.TextBox17)
-        Me.TabPage4.Controls.Add(Me.TextBox18)
         Me.TabPage4.Controls.Add(Me.Button3)
         Me.TabPage4.Controls.Add(Me.Button5)
         Me.TabPage4.Controls.Add(Me.ComboBox6)
@@ -157,63 +133,12 @@ Partial Class Form1
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "Fightcade"
         '
-        'Label24
-        '
-        Me.Label24.AutoSize = True
-        Me.Label24.BackColor = System.Drawing.Color.Transparent
-        Me.Label24.Location = New System.Drawing.Point(297, 66)
-        Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(9, 12)
-        Me.Label24.TabIndex = 65
-        Me.Label24.Text = "."
-        '
-        'Label25
-        '
-        Me.Label25.AutoSize = True
-        Me.Label25.BackColor = System.Drawing.Color.Transparent
-        Me.Label25.Location = New System.Drawing.Point(234, 66)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(9, 12)
-        Me.Label25.TabIndex = 64
-        Me.Label25.Text = "."
-        '
-        'Label26
-        '
-        Me.Label26.AutoSize = True
-        Me.Label26.BackColor = System.Drawing.Color.Transparent
-        Me.Label26.Location = New System.Drawing.Point(172, 66)
-        Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(9, 12)
-        Me.Label26.TabIndex = 63
-        Me.Label26.Text = "."
-        '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(308, 57)
+        Me.TextBox1.Location = New System.Drawing.Point(122, 59)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(50, 21)
-        Me.TextBox1.TabIndex = 62
-        '
-        'TextBox16
-        '
-        Me.TextBox16.Location = New System.Drawing.Point(245, 57)
-        Me.TextBox16.Name = "TextBox16"
-        Me.TextBox16.Size = New System.Drawing.Size(50, 21)
-        Me.TextBox16.TabIndex = 61
-        '
-        'TextBox17
-        '
-        Me.TextBox17.Location = New System.Drawing.Point(182, 57)
-        Me.TextBox17.Name = "TextBox17"
-        Me.TextBox17.Size = New System.Drawing.Size(50, 21)
-        Me.TextBox17.TabIndex = 60
-        '
-        'TextBox18
-        '
-        Me.TextBox18.Location = New System.Drawing.Point(122, 57)
-        Me.TextBox18.Name = "TextBox18"
-        Me.TextBox18.Size = New System.Drawing.Size(50, 21)
-        Me.TextBox18.TabIndex = 59
+        Me.TextBox1.Size = New System.Drawing.Size(240, 21)
+        Me.TextBox1.TabIndex = 59
         '
         'Button3
         '
@@ -336,13 +261,7 @@ Partial Class Form1
         'TabPage1
         '
         Me.TabPage1.BackColor = System.Drawing.Color.Lavender
-        Me.TabPage1.Controls.Add(Me.Label17)
-        Me.TabPage1.Controls.Add(Me.Label18)
-        Me.TabPage1.Controls.Add(Me.Label19)
-        Me.TabPage1.Controls.Add(Me.TextBox12)
-        Me.TabPage1.Controls.Add(Me.TextBox13)
-        Me.TabPage1.Controls.Add(Me.TextBox14)
-        Me.TabPage1.Controls.Add(Me.TextBox15)
+        Me.TabPage1.Controls.Add(Me.TextBox8)
         Me.TabPage1.Controls.Add(Me.setting2)
         Me.TabPage1.Controls.Add(Me.Button1)
         Me.TabPage1.Controls.Add(Me.TextBox4)
@@ -364,63 +283,12 @@ Partial Class Form1
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Fightcade2"
         '
-        'Label17
+        'TextBox8
         '
-        Me.Label17.AutoSize = True
-        Me.Label17.BackColor = System.Drawing.Color.Transparent
-        Me.Label17.Location = New System.Drawing.Point(300, 70)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(9, 12)
-        Me.Label17.TabIndex = 44
-        Me.Label17.Text = "."
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.BackColor = System.Drawing.Color.Transparent
-        Me.Label18.Location = New System.Drawing.Point(237, 70)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(9, 12)
-        Me.Label18.TabIndex = 43
-        Me.Label18.Text = "."
-        '
-        'Label19
-        '
-        Me.Label19.AutoSize = True
-        Me.Label19.BackColor = System.Drawing.Color.Transparent
-        Me.Label19.Location = New System.Drawing.Point(175, 70)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(9, 12)
-        Me.Label19.TabIndex = 42
-        Me.Label19.Text = "."
-        '
-        'TextBox12
-        '
-        Me.TextBox12.Location = New System.Drawing.Point(311, 61)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(50, 21)
-        Me.TextBox12.TabIndex = 41
-        '
-        'TextBox13
-        '
-        Me.TextBox13.Location = New System.Drawing.Point(248, 61)
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(50, 21)
-        Me.TextBox13.TabIndex = 40
-        '
-        'TextBox14
-        '
-        Me.TextBox14.Location = New System.Drawing.Point(185, 61)
-        Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(50, 21)
-        Me.TextBox14.TabIndex = 39
-        '
-        'TextBox15
-        '
-        Me.TextBox15.Location = New System.Drawing.Point(125, 61)
-        Me.TextBox15.Name = "TextBox15"
-        Me.TextBox15.Size = New System.Drawing.Size(50, 21)
-        Me.TextBox15.TabIndex = 38
+        Me.TextBox8.Location = New System.Drawing.Point(125, 63)
+        Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.Size = New System.Drawing.Size(240, 21)
+        Me.TextBox8.TabIndex = 39
         '
         'setting2
         '
@@ -554,12 +422,7 @@ Partial Class Form1
         'TabPage2
         '
         Me.TabPage2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.TabPage2.Controls.Add(Me.Label16)
-        Me.TabPage2.Controls.Add(Me.Label15)
-        Me.TabPage2.Controls.Add(Me.Label14)
-        Me.TabPage2.Controls.Add(Me.TextBox11)
-        Me.TabPage2.Controls.Add(Me.TextBox10)
-        Me.TabPage2.Controls.Add(Me.TextBox9)
+        Me.TabPage2.Controls.Add(Me.TextBox19)
         Me.TabPage2.Controls.Add(Me.ComboBox5)
         Me.TabPage2.Controls.Add(Me.Label13)
         Me.TabPage2.Controls.Add(Me.setting3)
@@ -570,7 +433,6 @@ Partial Class Form1
         Me.TabPage2.Controls.Add(Me.Label8)
         Me.TabPage2.Controls.Add(Me.TextBox6)
         Me.TabPage2.Controls.Add(Me.TextBox7)
-        Me.TabPage2.Controls.Add(Me.TextBox8)
         Me.TabPage2.Controls.Add(Me.ComboBox4)
         Me.TabPage2.Controls.Add(Me.CheckBox2)
         Me.TabPage2.Controls.Add(Me.Label9)
@@ -584,56 +446,12 @@ Partial Class Form1
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Overclock"
         '
-        'Label16
+        'TextBox19
         '
-        Me.Label16.AutoSize = True
-        Me.Label16.BackColor = System.Drawing.Color.Transparent
-        Me.Label16.Location = New System.Drawing.Point(297, 68)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(9, 12)
-        Me.Label16.TabIndex = 37
-        Me.Label16.Text = "."
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.BackColor = System.Drawing.Color.Transparent
-        Me.Label15.Location = New System.Drawing.Point(234, 68)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(9, 12)
-        Me.Label15.TabIndex = 36
-        Me.Label15.Text = "."
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.BackColor = System.Drawing.Color.Transparent
-        Me.Label14.Location = New System.Drawing.Point(171, 68)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(9, 12)
-        Me.Label14.TabIndex = 35
-        Me.Label14.Text = "."
-        '
-        'TextBox11
-        '
-        Me.TextBox11.Location = New System.Drawing.Point(308, 59)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(50, 21)
-        Me.TextBox11.TabIndex = 34
-        '
-        'TextBox10
-        '
-        Me.TextBox10.Location = New System.Drawing.Point(245, 59)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(50, 21)
-        Me.TextBox10.TabIndex = 33
-        '
-        'TextBox9
-        '
-        Me.TextBox9.Location = New System.Drawing.Point(182, 59)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(50, 21)
-        Me.TextBox9.TabIndex = 32
+        Me.TextBox19.Location = New System.Drawing.Point(119, 59)
+        Me.TextBox19.Name = "TextBox19"
+        Me.TextBox19.Size = New System.Drawing.Size(240, 21)
+        Me.TextBox19.TabIndex = 38
         '
         'ComboBox5
         '
@@ -724,13 +542,6 @@ Partial Class Form1
         Me.TextBox7.Size = New System.Drawing.Size(94, 21)
         Me.TextBox7.TabIndex = 22
         '
-        'TextBox8
-        '
-        Me.TextBox8.Location = New System.Drawing.Point(120, 59)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(50, 21)
-        Me.TextBox8.TabIndex = 21
-        '
         'ComboBox4
         '
         Me.ComboBox4.FormattingEnabled = True
@@ -808,11 +619,11 @@ Partial Class Form1
         'Label23
         '
         Me.Label23.AutoSize = True
-        Me.Label23.Location = New System.Drawing.Point(174, 92)
+        Me.Label23.Location = New System.Drawing.Point(140, 94)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(76, 12)
+        Me.Label23.Size = New System.Drawing.Size(156, 12)
         Me.Label23.TabIndex = 5
-        Me.Label23.Text = "Version : 1.0"
+        Me.Label23.Text = "Version : 1.3.1(2023-07-18)"
         '
         'LinkLabel2
         '
@@ -873,9 +684,11 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.ClientSize = New System.Drawing.Size(465, 334)
         Me.Controls.Add(Me.tabcontrol1)
         Me.Controls.Add(Me.PictureBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
         Me.Text = "Fightcade P2P Launcher"
@@ -921,7 +734,6 @@ Partial Class Form1
     Friend WithEvents Label8 As Label
     Friend WithEvents TextBox6 As TextBox
     Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents TextBox8 As TextBox
     Friend WithEvents ComboBox4 As ComboBox
     Friend WithEvents CheckBox2 As CheckBox
     Friend WithEvents Label9 As Label
@@ -929,19 +741,6 @@ Partial Class Form1
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents SFDWriter As SaveFileDialog
-    Friend WithEvents Label17 As Label
-    Friend WithEvents Label18 As Label
-    Friend WithEvents Label19 As Label
-    Friend WithEvents TextBox12 As TextBox
-    Friend WithEvents TextBox13 As TextBox
-    Friend WithEvents TextBox14 As TextBox
-    Friend WithEvents TextBox15 As TextBox
-    Friend WithEvents Label16 As Label
-    Friend WithEvents Label15 As Label
-    Friend WithEvents Label14 As Label
-    Friend WithEvents TextBox11 As TextBox
-    Friend WithEvents TextBox10 As TextBox
-    Friend WithEvents TextBox9 As TextBox
     Friend WithEvents TabPage3 As TabPage
     Friend WithEvents Label20 As Label
     Friend WithEvents Label23 As Label
@@ -950,13 +749,6 @@ Partial Class Form1
     Friend WithEvents Label22 As Label
     Friend WithEvents Label21 As Label
     Friend WithEvents TabPage4 As TabPage
-    Friend WithEvents Label24 As Label
-    Friend WithEvents Label25 As Label
-    Friend WithEvents Label26 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox16 As TextBox
-    Friend WithEvents TextBox17 As TextBox
-    Friend WithEvents TextBox18 As TextBox
     Friend WithEvents Button3 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents ComboBox6 As ComboBox
@@ -969,4 +761,7 @@ Partial Class Form1
     Friend WithEvents Label30 As Label
     Friend WithEvents Label31 As Label
     Friend WithEvents Label32 As Label
+    Friend WithEvents TextBox19 As TextBox
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TextBox8 As TextBox
 End Class

@@ -1,4 +1,4 @@
-Imports System.Runtime.InteropServices
+﻿Imports System.Runtime.InteropServices
 Imports System.IO
 Imports System.Text
 
@@ -49,6 +49,7 @@ Public Class Form1
         ComboBox5.Items.Add("Overclock 300%")
         ComboBox5.Items.Add("Overclock 400%")
         ComboBox5.Items.Add("Overclock 500%")
+        ComboBox5.Items.Add("Overclock 533%%")
         ComboBox5.SelectedIndex = 1
 
         ComboBox1.Text = GetiniValue("GGPOFBA", "Game", Application.StartupPath & "\setting.ini")
@@ -79,12 +80,6 @@ Public Class Form1
         Dim direct As String
         Dim window As String
         Dim directwindows As String
-        game = ComboBox7.Text.ToString()
-        address = TextBox1.Text.ToString()
-        port1 = TextBox21.Text
-        port2 = TextBox20.Text
-        position = ComboBox6.SelectedIndex
-        window = "-w"
 
         If ComboBox7.Text = "" Then
             MessageBox.Show("No Games Selected!", "Notification")
@@ -105,6 +100,13 @@ Public Class Form1
             MessageBox.Show("please input your partner's port!", "Notification")
             Return
         End If
+
+        game = ComboBox7.Text.ToString()
+        address = TextBox1.Text.ToString()
+        port1 = TextBox21.Text
+        port2 = TextBox20.Text
+        position = ComboBox6.SelectedIndex
+        window = "-w"
 
         direct = strCmdText & game & "," & port1 & "," & address & "," & port2 & "," & position
         directwindows = strCmdText & game & "," & port1 & "," & address & "," & port2 & "," & position & " " & window
@@ -128,13 +130,6 @@ Public Class Form1
         Dim direct As String
         Dim window As String
         Dim directwindows As String
-        game = ComboBox1.Text.ToString()
-        address = TextBox8.Text.ToString()
-        port1 = TextBox2.Text
-        port2 = TextBox3.Text
-        position = ComboBox2.SelectedIndex
-        delay = TextBox4.Text
-        window = "-w"
 
         If ComboBox1.Text = "" Then
             MessageBox.Show("No Games Selected!", "Notification")
@@ -159,6 +154,14 @@ Public Class Form1
         If TextBox4.Text = "" Then
             delay = 0
         End If
+
+        game = ComboBox1.Text.ToString()
+        address = TextBox8.Text.ToString()
+        port1 = TextBox2.Text
+        port2 = TextBox3.Text
+        position = ComboBox2.SelectedIndex
+        delay = TextBox4.Text
+        window = "-w"
 
         direct = strCmdText & game & "," & port1 & "," & address & "," & port2 & "," & position & "," & delay
         directwindows = strCmdText & game & "," & port1 & "," & address & "," & port2 & "," & position & "," & delay & " " & window
@@ -186,15 +189,6 @@ Public Class Form1
         Dim unitywindow As String
         Dim window As String
 
-        game = ComboBox4.Text.ToString()
-        address = TextBox19.Text.ToString()
-        port1 = TextBox7.Text
-        port2 = TextBox6.Text
-        position = ComboBox3.SelectedIndex
-        delay = TextBox5.Text
-        overclock = ComboBox5.SelectedIndex
-        window = "-w"
-
         If ComboBox4.Text = "" Then
             MessageBox.Show("No Games Selected!", "Notification")
             Return
@@ -218,6 +212,15 @@ Public Class Form1
         If TextBox5.Text = "" Then
             delay = 0
         End If
+
+        game = ComboBox4.Text.ToString()
+        address = TextBox19.Text.ToString()
+        port1 = TextBox7.Text
+        port2 = TextBox6.Text
+        position = ComboBox3.SelectedIndex
+        delay = TextBox5.Text
+        overclock = ComboBox5.SelectedIndex
+        window = "-w"
 
         unity = strCmdText & game & "," & port1 & "," & address & "," & port2 & "," & position & "," & overclock & "," & delay
         unitywindow = strCmdText & game & "," & port1 & "," & address & "," & port2 & "," & position & "," & overclock & "," & delay & " " & window
