@@ -26,15 +26,19 @@ Public Class Form1
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        ComboBox1.Items.AddRange(File.ReadAllLines(".\gamelist.cfg"))
-        ComboBox4.Items.AddRange(File.ReadAllLines(".\gamelist.cfg"))
-        ComboBox7.Items.AddRange(File.ReadAllLines(".\gamelist.cfg"))
+        ComboBox1.Items.AddRange(File.ReadAllLines(".\gamelist_arcade.cfg"))
+        ComboBox4.Items.AddRange(File.ReadAllLines(".\gamelist_arcade.cfg"))
+        ComboBox7.Items.AddRange(File.ReadAllLines(".\gamelist_arcade.cfg"))
+        ComboBox9.Items.AddRange(File.ReadAllLines(".\gamelist_snes9x.cfg"))
+
         ComboBox2.Items.Add("Player 1")
         ComboBox2.Items.Add("Player 2")
         ComboBox3.Items.Add("Player 1")
         ComboBox3.Items.Add("Player 2")
         ComboBox6.Items.Add("Player 1")
         ComboBox6.Items.Add("Player 2")
+        ComboBox8.Items.Add("Player 1")
+        ComboBox8.Items.Add("Player 2")
         '   ComboBox7.SelectedIndex = 0
         '  ComboBox1.SelectedIndex = 0
         '   ComboBox4.SelectedIndex = 0
@@ -68,6 +72,13 @@ Public Class Form1
         TextBox7.Text = GetiniValue("Overclock", "My Port", Application.StartupPath & "\setting.ini")
         TextBox6.Text = GetiniValue("Overclock", "Partner Port", Application.StartupPath & "\setting.ini")
         TextBox5.Text = GetiniValue("Overclock", "Delay", Application.StartupPath & "\setting.ini")
+
+        ComboBox9.Text = GetiniValue("Snes9x", "Game", Application.StartupPath & "\setting.ini")
+        TextBox9.Text = GetiniValue("Snes9x", "ip", Application.StartupPath & "\setting.ini")
+        TextBox12.Text = GetiniValue("Snes9x", "My Port", Application.StartupPath & "\setting.ini")
+        TextBox11.Text = GetiniValue("Snes9x", "Partner Port", Application.StartupPath & "\setting.ini")
+        TextBox10.Text = GetiniValue("Snes9x", "Delay", Application.StartupPath & "\setting.ini")
+
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click   '구버전 ggpofba p2p
@@ -168,11 +179,9 @@ Public Class Form1
 
         If Me.CheckBox2.Checked = True Then
             System.Diagnostics.Process.Start("CMD.exe", directwindows)
-            MsgBox(directwindows)
         End If
         If Me.CheckBox2.Checked = False Then
             System.Diagnostics.Process.Start("CMD.exe", direct)
-            MsgBox(direct)
         End If
     End Sub
 
@@ -233,6 +242,61 @@ Public Class Form1
         End If
         End Sub
 
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click   'snes9x start
+        Dim strCmdText As String = "/c %cd%\emulator\snes9x\fcadesnes9x.exe quark:direct,"      '/c : 실행 후 cmd 창 제거, /k : 실행 후 cmd 창 유지
+        Dim game As String
+        Dim address As String
+        Dim port1 As Int32
+        Dim port2 As Int32
+        Dim position As Int32
+        Dim delay As Int32
+        Dim direct As String
+        Dim window As String
+        Dim directwindows As String
+
+        If ComboBox9.Text = "" Then
+            MessageBox.Show("No Games Selected!", "Notification")
+            Return
+        End If
+
+        If TextBox9.Text = "" Then
+            MessageBox.Show("IP address blanked!", "Notification")
+            Return
+        End If
+
+        If TextBox12.Text = "" Then
+            MessageBox.Show("please input your port!", "Notification")
+            Return
+        End If
+
+        If TextBox11.Text = "" Then
+            MessageBox.Show("please input your partner's port!", "Notification")
+            Return
+        End If
+
+        If TextBox10.Text = "" Then
+            delay = 0
+        End If
+
+        game = ComboBox9.Text.ToString()
+        address = TextBox9.Text.ToString()
+        port1 = TextBox12.Text
+        port2 = TextBox11.Text
+        position = ComboBox8.SelectedIndex
+        delay = TextBox10.Text
+        window = "-w"
+
+        direct = strCmdText & game & "," & port1 & "," & address & "," & port2 & "," & position & "," & delay
+        directwindows = strCmdText & game & "," & port1 & "," & address & "," & port2 & "," & position & "," & delay & " " & window
+
+        If Me.CheckBox2.Checked = True Then
+            System.Diagnostics.Process.Start("CMD.exe", directwindows)
+        End If
+        If Me.CheckBox2.Checked = False Then
+            System.Diagnostics.Process.Start("CMD.exe", direct)
+        End If
+    End Sub
+
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click   'fc1
         WritePrivateProfileString("GGPOFBA", "Game", ComboBox1.SelectedItem, Application.StartupPath & "\setting.ini")
         WritePrivateProfileString("GGPOFBA", "ip", TextBox1.Text, Application.StartupPath & "\setting.ini")
@@ -259,6 +323,15 @@ Public Class Form1
         MessageBox.Show("Setting saved")
     End Sub
 
+    Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Button2.Click     'snes9x setting save
+        WritePrivateProfileString("Snes9x", "Game", ComboBox9.SelectedItem, Application.StartupPath & "\setting.ini")
+        WritePrivateProfileString("Snes9x", "ip", TextBox9.Text, Application.StartupPath & "\setting.ini")
+        WritePrivateProfileString("Snes9x", "My Port", TextBox12.Text, Application.StartupPath & "\setting.ini")
+        WritePrivateProfileString("Snes9x", "Partner Port", TextBox11.Text, Application.StartupPath & "\setting.ini")
+        WritePrivateProfileString("Snes9x", "delay", TextBox10.Text, Application.StartupPath & "\setting.ini")
+        MessageBox.Show("Setting saved")
+    End Sub
+
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
         Process.Start("MicrosoftEdge.exe", "https://chamcham425.blogspot.com/2020/09/blog-post.html")
     End Sub
@@ -266,4 +339,5 @@ Public Class Form1
     Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
         Process.Start("MicrosoftEdge.exe", "https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=jicdoo&logNo=220822978434")
     End Sub
+
 End Class

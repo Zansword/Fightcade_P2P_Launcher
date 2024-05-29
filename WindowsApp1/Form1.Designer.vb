@@ -80,13 +80,30 @@ Partial Class Form1
         Me.Label22 = New System.Windows.Forms.Label()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
+        Me.TabPage5 = New System.Windows.Forms.TabPage()
         Me.SFDWriter = New System.Windows.Forms.SaveFileDialog()
+        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.TextBox10 = New System.Windows.Forms.TextBox()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.ComboBox8 = New System.Windows.Forms.ComboBox()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.TextBox11 = New System.Windows.Forms.TextBox()
+        Me.TextBox12 = New System.Windows.Forms.TextBox()
+        Me.ComboBox9 = New System.Windows.Forms.ComboBox()
+        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tabcontrol1.SuspendLayout()
         Me.TabPage4.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         Me.TabPage3.SuspendLayout()
+        Me.TabPage5.SuspendLayout()
         Me.SuspendLayout()
         '
         'PictureBox1
@@ -103,6 +120,7 @@ Partial Class Form1
         Me.tabcontrol1.Controls.Add(Me.TabPage4)
         Me.tabcontrol1.Controls.Add(Me.TabPage1)
         Me.tabcontrol1.Controls.Add(Me.TabPage2)
+        Me.tabcontrol1.Controls.Add(Me.TabPage5)
         Me.tabcontrol1.Controls.Add(Me.TabPage3)
         Me.tabcontrol1.Location = New System.Drawing.Point(0, -2)
         Me.tabcontrol1.Name = "tabcontrol1"
@@ -621,9 +639,9 @@ Partial Class Form1
         Me.Label23.AutoSize = True
         Me.Label23.Location = New System.Drawing.Point(140, 94)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(156, 12)
+        Me.Label23.Size = New System.Drawing.Size(146, 12)
         Me.Label23.TabIndex = 5
-        Me.Label23.Text = "Version : 1.3.1(2023-07-18)"
+        Me.Label23.Text = "Version : 1.4(2024-05-29)"
         '
         'LinkLabel2
         '
@@ -675,10 +693,171 @@ Partial Class Form1
         Me.Label20.TabIndex = 0
         Me.Label20.Text = "Fightcade2  P2P Direct launcher" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
+        'TabPage5
+        '
+        Me.TabPage5.BackColor = System.Drawing.Color.SlateBlue
+        Me.TabPage5.Controls.Add(Me.TextBox9)
+        Me.TabPage5.Controls.Add(Me.Button2)
+        Me.TabPage5.Controls.Add(Me.Button6)
+        Me.TabPage5.Controls.Add(Me.TextBox10)
+        Me.TabPage5.Controls.Add(Me.Label14)
+        Me.TabPage5.Controls.Add(Me.ComboBox8)
+        Me.TabPage5.Controls.Add(Me.Label15)
+        Me.TabPage5.Controls.Add(Me.TextBox11)
+        Me.TabPage5.Controls.Add(Me.TextBox12)
+        Me.TabPage5.Controls.Add(Me.ComboBox9)
+        Me.TabPage5.Controls.Add(Me.CheckBox4)
+        Me.TabPage5.Controls.Add(Me.Label16)
+        Me.TabPage5.Controls.Add(Me.Label17)
+        Me.TabPage5.Controls.Add(Me.Label18)
+        Me.TabPage5.Controls.Add(Me.Label19)
+        Me.TabPage5.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage5.Name = "TabPage5"
+        Me.TabPage5.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage5.Size = New System.Drawing.Size(459, 316)
+        Me.TabPage5.TabIndex = 4
+        Me.TabPage5.Text = "Snes9x"
+        '
         'SFDWriter
         '
         Me.SFDWriter.FileName = "Start.bat"
         Me.SFDWriter.Filter = "Batch Files|*.bat"
+        '
+        'TextBox9
+        '
+        Me.TextBox9.Location = New System.Drawing.Point(122, 59)
+        Me.TextBox9.Name = "TextBox9"
+        Me.TextBox9.Size = New System.Drawing.Size(240, 21)
+        Me.TextBox9.TabIndex = 54
+        '
+        'Button2
+        '
+        Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.SlateBlue
+        Me.Button2.FlatAppearance.BorderSize = 10
+        Me.Button2.Location = New System.Drawing.Point(159, 267)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(124, 31)
+        Me.Button2.TabIndex = 53
+        Me.Button2.Text = "Save Settings"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.FlatAppearance.BorderColor = System.Drawing.Color.SlateBlue
+        Me.Button6.FlatAppearance.BorderSize = 10
+        Me.Button6.Location = New System.Drawing.Point(350, 267)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(82, 31)
+        Me.Button6.TabIndex = 52
+        Me.Button6.Text = "Game Start"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'TextBox10
+        '
+        Me.TextBox10.Location = New System.Drawing.Point(122, 194)
+        Me.TextBox10.Name = "TextBox10"
+        Me.TextBox10.Size = New System.Drawing.Size(93, 21)
+        Me.TextBox10.TabIndex = 51
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.BackColor = System.Drawing.Color.Transparent
+        Me.Label14.Location = New System.Drawing.Point(37, 197)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(76, 12)
+        Me.Label14.TabIndex = 50
+        Me.Label14.Text = "Input Delay :"
+        '
+        'ComboBox8
+        '
+        Me.ComboBox8.FormattingEnabled = True
+        Me.ComboBox8.Location = New System.Drawing.Point(121, 163)
+        Me.ComboBox8.Name = "ComboBox8"
+        Me.ComboBox8.Size = New System.Drawing.Size(237, 20)
+        Me.ComboBox8.TabIndex = 49
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.BackColor = System.Drawing.Color.Transparent
+        Me.Label15.Location = New System.Drawing.Point(33, 166)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(80, 12)
+        Me.Label15.TabIndex = 48
+        Me.Label15.Text = "My Position :"
+        '
+        'TextBox11
+        '
+        Me.TextBox11.Location = New System.Drawing.Point(122, 129)
+        Me.TextBox11.Name = "TextBox11"
+        Me.TextBox11.Size = New System.Drawing.Size(93, 21)
+        Me.TextBox11.TabIndex = 47
+        '
+        'TextBox12
+        '
+        Me.TextBox12.Location = New System.Drawing.Point(121, 94)
+        Me.TextBox12.Name = "TextBox12"
+        Me.TextBox12.Size = New System.Drawing.Size(94, 21)
+        Me.TextBox12.TabIndex = 46
+        '
+        'ComboBox9
+        '
+        Me.ComboBox9.FormattingEnabled = True
+        Me.ComboBox9.Location = New System.Drawing.Point(121, 18)
+        Me.ComboBox9.Name = "ComboBox9"
+        Me.ComboBox9.Size = New System.Drawing.Size(237, 20)
+        Me.ComboBox9.TabIndex = 45
+        '
+        'CheckBox4
+        '
+        Me.CheckBox4.AutoSize = True
+        Me.CheckBox4.Location = New System.Drawing.Point(38, 235)
+        Me.CheckBox4.Name = "CheckBox4"
+        Me.CheckBox4.Size = New System.Drawing.Size(75, 16)
+        Me.CheckBox4.TabIndex = 44
+        Me.CheckBox4.Text = "Windows"
+        Me.CheckBox4.UseVisualStyleBackColor = True
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.BackColor = System.Drawing.Color.Transparent
+        Me.Label16.Location = New System.Drawing.Point(34, 132)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(79, 12)
+        Me.Label16.TabIndex = 43
+        Me.Label16.Text = "Partner Port :"
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.BackColor = System.Drawing.Color.Transparent
+        Me.Label17.Location = New System.Drawing.Point(58, 97)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(57, 12)
+        Me.Label17.TabIndex = 42
+        Me.Label17.Text = "My Port :"
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.BackColor = System.Drawing.Color.Transparent
+        Me.Label18.Location = New System.Drawing.Point(45, 62)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(68, 12)
+        Me.Label18.TabIndex = 41
+        Me.Label18.Text = "Partner IP :"
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.BackColor = System.Drawing.Color.Transparent
+        Me.Label19.Location = New System.Drawing.Point(27, 22)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(86, 12)
+        Me.Label19.TabIndex = 40
+        Me.Label19.Text = "Game Select :"
         '
         'Form1
         '
@@ -702,6 +881,8 @@ Partial Class Form1
         Me.TabPage2.PerformLayout()
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage3.PerformLayout()
+        Me.TabPage5.ResumeLayout(False)
+        Me.TabPage5.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -764,4 +945,20 @@ Partial Class Form1
     Friend WithEvents TextBox19 As TextBox
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox8 As TextBox
+    Friend WithEvents TabPage5 As TabPage
+    Friend WithEvents TextBox9 As TextBox
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button6 As Button
+    Friend WithEvents TextBox10 As TextBox
+    Friend WithEvents Label14 As Label
+    Friend WithEvents ComboBox8 As ComboBox
+    Friend WithEvents Label15 As Label
+    Friend WithEvents TextBox11 As TextBox
+    Friend WithEvents TextBox12 As TextBox
+    Friend WithEvents ComboBox9 As ComboBox
+    Friend WithEvents CheckBox4 As CheckBox
+    Friend WithEvents Label16 As Label
+    Friend WithEvents Label17 As Label
+    Friend WithEvents Label18 As Label
+    Friend WithEvents Label19 As Label
 End Class
